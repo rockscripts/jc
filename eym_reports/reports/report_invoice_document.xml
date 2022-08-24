@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="eym_report_invoice_document_inherit" inherit_id="account.report_invoice_document">
+      <xpath expr="//table[@name='invoice_line_table']/thead/tr/th" position="replace"/>
+      <!--
+        items
+        <xpath expr="//table[@name='invoice_line_table']/td" position="replace"/>
+      -->
+      
+      <!-- 
+        internal code
+      
+      <xpath expr="//table[@name='invoice_line_table']/th[1]" position="replace"/>
+      <xpath expr="//table[@name='invoice_line_table']/td[1]" position="replace"/>
+      -->
+      <!-- 
+        measure units
+      
+      <xpath expr="//table[@name='invoice_line_table']/th[3]" position="replace"/>
+      <xpath expr="//table[@name='invoice_line_table']/td[3]" position="replace"/>
+      -->
+    </template>
+</odoo>
